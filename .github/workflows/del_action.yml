@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: List all workflow runs
         id: list
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const workflow_id = process.env.WORKFLOW_NAME || "all"; // 可以指定 workflow 名称
